@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Introducing Drone Configuration Templates | Drone by Harness | Harness</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>引入无人机配置模板|无人机通过线束|线束</h1>
+<blockquote>原文：<a href="https://www.harness.io/blog/drone-configuration-templates#0001-01-01">https://www.harness.io/blog/drone-configuration-templates#0001-01-01</a></blockquote><div><p>引入无人机配置模板。在处理多种配置时，这可能是一个强大的功能。了解更多内幕！</p><div fs-richtext-element="rich-text" class="blog-rtf w-richtext"><p>今天，领先的开源云原生持续集成(CI)和持续交付(CD)平台Drone.io宣布正式支持配置模板。</p><figure class="w-richtext-align-center w-richtext-figure-type-image"/><h2>通过配置模板开始使用Drone.io</h2><p>大型组织可能难以维护大量的构建配置文件。通常，这些配置文件在不同的项目中非常相似或者几乎相同。有些变更需要跨所有项目进行，例如，需要更改docker图像的版本。</p><p>为了使这更简单，Drone已经建立了可以跨项目共享的模板。项目可以使用模板并提供特定于项目的信息来改变版本。</p><p>这将简化拥有大量相似配置文件的组织的配置管理；它将降低单个存储库中YAML文件的复杂性，并将简化跨存储库的配置管理。</p><p>从阅读<a href="https://docs.drone.io/template/">模板</a>文档开始。</p><p>第一步是定义您的配置模板，无论是Jsonnet还是Starlark。这两个指南都可以在文档中找到，但是，对于这个博客，我将演示一个Jsonnet模板。</p><figure class="w-richtext-figure-type- "/><p>需要注意的是，所有自定义变量都必须以“input”开头。</p><p>对模板满意后，使用以下任一方法将其添加到无人机数据库:</p><p>下一步是定义您的. drone.yml</p><figure class="w-richtext-figure-type- "/><ul role="list"><li><strong> load </strong>是指您刚刚创建的模板名称</li><li><strong>数据</strong>指自由形式模板输入的集合</li></ul><p>一旦将更新后的. drone.yml文件推送到每个存储库，就可以开始了。</p><p><em>无人机是现代CI/CD。容器-原生，可通过开源和企业内部版本获得。</em> <a href="https://readme.drone.io/"> <em>今天试试</em> </a> <em>。</em></p></div></div>    
+</body>
+</html>

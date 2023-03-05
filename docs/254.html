@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Meltwater Runs 1200 Pipelines Per Day With Harness CI | Harness</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>融水每天运行1200条管道</h1>
+<blockquote>原文：<a href="https://www.harness.io/blog/meltwater-scaled-pipelines-with-harness#0001-01-01">https://www.harness.io/blog/meltwater-scaled-pipelines-with-harness#0001-01-01</a></blockquote><div><p>了解融水如何一天制造1200件艺术品。</p><div fs-richtext-element="rich-text" class="blog-rtf w-richtext"><h2><strong>关于</strong></h2><p>融水帮助公司根据外部的见解做出更好、更明智的决策。我们相信，商业战略将越来越多地受到在线数据洞察的影响。除了内部报告系统之外，组织还将关注不断增长和变化的数据世界。他们的客户利用这些洞察，根据实时分析及时做出决策。</p><h2>如果它没有坏掉…嗯，实际上它坏掉了。</h2><p>融水正在失去开发者的信心。用于修补持续集成管道的Jenkins实例缺乏自动伸缩，这意味着开发人员排队等待完成他们的构建。Meltwater使用了多个Jenkins实例，因此没有人愿意花费数月的维护时间来解决这个问题。</p><p>更新詹金斯是一件如此麻烦的事情，以至于你最终会几个月甚至几年都不去更新它</p><blockquote>Jim Sheldon | melt water的首席软件工程师</blockquote><p>只有15%的融水开发商使用公司发行的詹金斯管道。团队开始使用TravisCI和CirlceCI构建自己的管道。即使开发人员使用定制管道，只有60%的Meltwater回购被集成到CI管道中。</p><p>“队伍正以最快的速度逃离詹金斯。”</p><blockquote>Jim Sheldon | melt water的首席软件工程师</blockquote><p>开发人员乐于使用一次性CI工具，直到Meltwater决定迁移到Kubernetes。Travis CI和CircleCI成为了安全风险，因为它们需要Meltwater向外部公开它们的API。Meltwater需要找到内部CI解决方案。</p><figure class="w-richtext-figure-type- "/><h2><strong>简单=采用</strong></h2><p>融水选择了Harness CI作为他们Kubernetes迁移的基地。自从转向利用CI以来，采用率增加了3倍，达到222名开发人员，占组织的50%。这些开发人员每天运行1200条管道。Harness CI还将Meltwater的回购自动化从60%提高到75%。</p><p>Harness CI的简单性提供了一个较低的学习曲线，并已成为分享最佳CI实践的事实语言。Harness CI允许开发人员创建简单和复杂的管道。</p><p>“Harness CI处理了我们交给它的一切，它可以根据我们的需要变得复杂或简单。”</p><blockquote>Jim Sheldon | melt water的首席软件工程师</blockquote><p>Harness CI的自动扩展功能确保始终有足够的实例来满足需求，同时通过在需求减少时关闭代理来显著降低云基础架构成本。利用CI插件成为另一个管道步骤，可以即时设置，不需要开发人员和构建管理员之间的协调。</p><p>“驾驭CI是极其开放和灵活的。没有什么能阻止您按照自己想要的方式进行构建和部署。詹金斯非常固执，不会允许我们像现在这样发展。”</p><blockquote>Jim Sheldon | melt water的首席软件工程师</blockquote><p>如果有什么事情发生，Meltwater有一个最好的开源社区可以参考。例如，当Docker实施新的费率限制时，几天之内就有一个利用CI解决方案发布在论坛上。对于其他CI工具，Docker费率限制仍然是一个问题。</p></div></div>    
+</body>
+</html>
